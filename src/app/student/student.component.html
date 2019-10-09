@@ -1,7 +1,7 @@
 <div>
-	Student: {{student.name}}
-	<div [hidden]="!student.isActive">
-		The student is studing on class {{student.class}}.
+	Student: {{student?.name}}
+	<div *ngIf="student?.isActive">
+		The student is studing on class {{student?.class}}.
 	</div>
 	<hr />
 </div>

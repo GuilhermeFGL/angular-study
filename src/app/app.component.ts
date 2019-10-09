@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Student } from './student/student.model';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-study';
-  student1 = {name: "Joao", isActive: true, class: "Class A"};
-  student2 = {name: "Maria", isActive: true, class: "Class B"};
-  student3 = {name: "Fred", isActive: false};
+
+  students = [
+    {name: "Joao", isActive: true, class: "Class A"},
+	{name: "Maria", isActive: true, class: "Class B"},
+	{name: "Fred", isActive: false}
+  ];
 }
