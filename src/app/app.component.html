@@ -1,2 +1,7 @@
 <app-header></app-header>
 <app-student *ngFor="let student of students" [student]="student"></app-student>
+
+<br/>
+
+<button (click)="description.focus()">Event Focus!</button><br />
+<textarea #description></textarea>
